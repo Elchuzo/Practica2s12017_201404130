@@ -25,10 +25,10 @@ class NodoDoble(object):
         self.dato = dato
         self.derecha = derecha
         self.izquierda = izquierda
-		self.arriba = arriba
-		self.abajo = abajo
-		self.posx = posx
-		self.posy = posy
+        self.arriba = arriba
+        self.abajo = abajo
+        self.posx = posx
+        self.posy = posy
 		
 class ListaDoble(object):
     
@@ -53,13 +53,13 @@ class ListaDoble(object):
         if(actual is not None):
             if(actual==self.cabeza):
                 self.cabeza = actual.derecha
-				if(actual.derecha is not None):
+                if(actual.derecha is not None):
                     actual.derecha.izquierda = None
             elif(actual.derecha is not None):
                 actual.izquierda.derecha = actual.derecha
-				actual.derecha.izquierda = actual.izquierda
+                actual.derecha.izquierda = actual.izquierda
             else:
-			    actual.izquierda.derecha = None
+                actual.izquierda.derecha = None
             actual = None
 
 class Lista(object):
